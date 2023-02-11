@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#headingsection{
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+#headingsection #right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+#centerpage #centerheading{
+    text-align: center;
+    font-size: 30px;    
+}
+#allcards .cards{
+    margin: 30px;
+    border: 1px solid black;
+    /* position: absolute; */
+    height: 300px;
+    width: 200px;
+    /* background-color: blue; */
+    
+}
+#allcards {
+    /* background-color: red; */
+    height: 500px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 266px;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows: 16% 16% 16% 16% 16% 16%; 
+    padding: 10px;
+}
+#allcards .cards .productimage .finalimages img{
+    height: 172px;
+    width: 196px;
+}
+
