@@ -7,21 +7,27 @@ function transfer(data) {
   
     const allProducts = data.products;
     console.log(allProducts);
+    console.log(allProducts[0].title);
+    let el=[]
     allProducts.forEach(element => {
-        const el = `
+        el.push (`
         <div class="finalimages">      
         <img src=${element.images[0]} />
-        </div>        `
-        document.getElementsByClassName('productimage')[0].innerHTML += el;
+        <div class=leftheading>
+        Title: ${element.title}
+        Brand: ${element.brand}
+        </div>
+        Price: $${element.price}
+        Rating: ${element.rating}
+        Stock: ${element.stock}
+        </div>       
+        `)
 
-        const infosection=`
-            <div class="firstline>
-            Title: ${element.title}
-            Brand: ${element.brand}
-            </div>
+        for(var i=0;i<el.length;i++){
+        document.getElementsByClassName('productimage')[i].innerHTML = el[i];
+        }
+
         
-        `
-        document.getElementsByClassName("productinfo")[0].innerHTML+=infosection
 
     });
     // console.log(data.products)

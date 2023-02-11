@@ -38,13 +38,19 @@
     height: 500px;
     display: grid;
     column-gap: 10px;
-    row-gap: 266px;
-    grid-template-columns: 20% 20% 20% 20% 20%; 
-    grid-template-rows: 16% 16% 16% 16% 16% 16%; 
+    row-gap: 30px;
+    grid-template-columns: 25% 25% 25% 25% ; 
+    grid-template-rows: auto; 
     padding: 10px;
 }
 #allcards .cards .productimage .finalimages img{
     height: 172px;
     width: 196px;
 }
-
+.finalimages .leftheading{
+    display: flex;
+    justify-content: space-between;
+}
+#centerpage{
+   padding: 30px;
+}
